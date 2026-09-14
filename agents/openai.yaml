@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ascend 算子需求采集"
+  short_description: "收集证据、追问接口并冻结 Ascend 算子契约"
+  default_prompt: "使用 $ascend-op-intake 从我允许的材料中提取算子需求，只询问关键缺口，并在我批准完整契约后完成冻结与复验。"

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "contract_id": "{{OPERATOR_SLUG}}",
+  "revision": 1,
+  "status": "draft",
+  "task_root": "{{TASK_ROOT}}",
+  "materials_manifest": "{{MATERIALS_PATH}}",
+  "mode": "clean-room-generation",
+  "operator": {
+    "name": "{{OPERATOR_NAME}}",
+    "target_soc": null,
+    "integration_target": null,
+    "scope": {
+      "included": [],
+      "excluded": []
+    }
+  },
+  "interface": {
+    "registration": null,
+    "inputs": [],
+    "attributes": [],
+    "outputs": [],
+    "side_effects": [],
+    "shape_relations": [],
+    "graph_mode": {
+      "required": null,
+      "capture_contract": [],
+      "replay_contract": []
+    },
+    "branch_decisions": {
+      "registration": {"disposition": "pending", "rationale": null, "deferment": null},
+      "tensor_contract": {"disposition": "pending", "rationale": null, "deferment": null},
+      "state_aliasing": {"disposition": "pending", "rationale": null, "deferment": null},
+      "shape_semantics": {"disposition": "pending", "rationale": null, "deferment": null},
+      "numerical_behavior": {"disposition": "pending", "rationale": null, "deferment": null},
+      "graph_execution": {"disposition": "pending", "rationale": null, "deferment": null}
+    }
+  },
+  "correctness": {
+    "reference_material_ids": [],
+    "required_cases": [],
+    "tolerances": {
+      "atol": null,
+      "rtol": null,
+      "standard": null
+    },
+    "stateful_checks": []
+  },
+  "performance": {
+    "required": true,
+    "baseline_material_ids": [],
+    "metric": null,
+    "comparator": null,
+    "threshold": null,
+    "benchmark_case_ids": [],
+    "measurement_protocol": null,
+    "timing_boundary": null
+  },
+  "delivery": {
+    "outputs_dir": "outputs/{{OPERATOR_SLUG}}",
+    "docs_dir": "dev_docs/{{OPERATOR_SLUG}}",
+    "required_artifacts": []
+  },
+  "policies": {
+    "source_mode": "clean-room-generation",
+    "required_material_roles": [
+      "task_scope",
+      "executable_reference",
+      "workload",
+      "acceptance",
+      "source_policy"
+    ]
+  },
+  "evidence": [],
+  "decisions": {
+    "confirmed": [],
+    "unresolved_blockers": []
+  },
+  "approval": {
+    "user_confirmed": false,
+    "approved_by": null,
+    "approved_at": null,
+    "confirmation_record": null,
+    "materials_snapshot_sha256": null,
+    "contract_sha256": null
+  }
+}
